@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .about .image img {
+      display: block !important;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 20px;
+    }
+  }
+  
