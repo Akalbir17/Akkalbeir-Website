@@ -1,0 +1,499 @@
+baseURL: "http://localhost:1313/"
+languageCode: "en-us"
+title: "Akalbir Singh Chadha's Portfolio"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: Publications
+      name: Publications
+      title: View My Publications on Google Scholar
+      url: https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=_5Z28iIAAAAJ
+      weight: 1
+      params:
+        newPage: true
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Akalbir Singh Chadha's Portfolio"
+  description: Portfolio
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/logo.ico"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandLogo: "/images/logo300.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Akalbir Singh Chadha" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Akalbir"
+    subtitle: "Teaching machines to outsmart me, one algorithm at a time ;)"
+    typingAnimation: true
+    content: "A passionate AI/ML engineer with a knack for turning data into decisions. I specialize in crafting intelligent systems that can predict the future, recognize patterns, and occasionally beat me at chess. My algorithms are so smart, they've started leaving me sticky notes with optimization tips."
+    #A passionate AI/ML engineer with a knack for turning data into decisions. I specialize in crafting intelligent systems that can predict the future, recognize faces, and maybe even understand why my code works (when it does). From neural networks that dream of electric sheep to algorithms that can beat you at chess while simultaneously ordering pizza, I'm here to push the boundaries of what's possible in the world of artificial intelligence.
+    image: /images/ai_me.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "https://drive.google.com/file/d/1l6wS4sTjjXkXAO0C69F3s0P547eLzxhh/view?usp=sharing"
+      download: true
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/Akalbir17
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/akkalbeir/
+        - icon: fab fa-medium
+          url: https://akalbir.medium.com/
+      #customIcons:
+       # - icon: /fav.png
+        #  url: "https://example.com"
+
+  # About
+  # about:
+  #   enable: true
+  #   title: " The Human Behind the Machine a.k.a ME "
+  #   image: "/images/me.png"
+  #   content: |-
+  #     "As an AI and ML engineer, I don't just build intelligent systems—I bring them to life. With a deep passion for pushing the boundaries of what's possible, I've made it my mission to create AI that not only thinks, but understands, adapts, and evolves. My journey began with a strong foundation in computer science, but it was the limitless potential of AI that truly captivated me. From developing machine learning models that can predict the future with uncanny accuracy to implementing deep learning algorithms that can recognize patterns even the human eye might miss, I've had the privilege of working on projects that are as exciting as they are impactful.
+
+  #   Currently, I'm diving deep into the world of large language models and recommendation systems, crafting AI that can not only understand and respond to human language, but also anticipate and cater to individual needs and preferences. It's a thrilling time to be in this field, and I'm always eager to collaborate with like-minded innovators to transform groundbreaking ideas into game-changing realities.
+
+  #   So if you're ready to embark on a journey to the forefront of AI and ML, I'm ready to be your Mr. Miyagi. Let's create intelligent systems that don't just change the way we live and work, but redefine what we believe is possible
+  #   skills:
+  #     enable: true
+  #     title: "The Tools of My Trade"
+  #     items:
+  #       - "Python"
+  #       - "C/C++"
+  #       - "SQL"
+  #       - "PyTorch & TensorFlow"
+  #       - "CUDA"
+  #       - "Apache Spark"
+  #       - "MLFlow"
+
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/Designer.png"
+    content: |-
+      As an Artificial Intelligence and Machine Learning engineer, I don't just build intelligent systems—I bring them to life. With a deep passion for pushing the boundaries of what's possible, I've made it my mission to create AI that not only thinks, but understands, adapts, and evolves. My journey began with a strong foundation in computer science, but it was the limitless potential of AI that truly captivated me. From developing machine learning models that can predict the future with uncanny accuracy to implementing deep learning algorithms that can recognize patterns even the human eye might miss, I've had the privilege of working on projects that are as exciting as they are impactful.
+
+      Currently, I'm diving deep into the world of large language models and recommendation systems, crafting AI that can not only understand and respond to human language, but also anticipate and cater to individual needs and preferences. It's a thrilling time to be in this field, and I'm always eager to collaborate with like-minded innovators to transform groundbreaking ideas into game-changing realities.
+
+      So if you're ready to embark on a journey to the forefront of AI and ML, I'm ready to be your Mr. Miyagi. Let's create intelligent systems that don't just change the way we live and work, but redefine what we believe is possible.
+    skills:
+      enable: true
+      title: "The Tools of My Trade:"
+      items:
+        - "Python"
+        - "C++"
+        - "SQL & NoSQL DBs"
+        - "TensorFlow & PyTorch"
+        - "Scikit-learn"
+        - "Hugging Face"
+        - "Ray"
+        - "MLflow"
+        - "Apache Spark"
+        - "Surprise & Merlin"
+        - "Kubeflow"
+        - "Hadoop"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Artificial Intelligence Engineer"
+        company: "Workup"
+        companyUrl: "https://www.joinworkup.com/"
+        date: "May 2024 - present"
+        # featuredLink:
+        #   enable: true
+        #   name: "View the project"
+        #   url: "https://example.com"
+        content: |
+          - **AI-Driven Multimodal Recommendation System:** Conceptualized, pitched to CEO, and secured approval for a multimodal AI-driven recommendation system, subsequently leading a team of 6 to integrate computer vision, NLP, and audio processing techniques for comprehensive candidate profile analysis, resulting in a 30% reduction in candidate screening time.
+          - **Custom Deep Learning Architecture:** Engineered a custom deep learning architecture using PyTorch, leveraging state-of-the-art techniques such as Vision Transformers (ViT) for video analysis, BERT for text processing, and WaveNet for audio feature extraction. Resulted in a 45% increase in candidate-job matching accuracy and a 40% improvement in shortlisting efficiency.
+          - **Implemented Efficient Large-Scale Data Processing:** Utilized NVIDIA Merlin for efficient large-scale data processing and model training, reducing computation time by 60% and enabling real-time recommendations for over 1500 candidates, leading to a 50% increase in candidate processing capacity.
+          - **Developed Scalable Backend and Frontend Integration:** Built a scalable backend using Flask and MongoDB, capable of handling 1000+ concurrent users, and integrated with the frontend via RESTful APIs and Axios, achieving a 30% reduction in server response time and a 25% increase in user satisfaction.
+          - **Designed Analytics Dashboard for Recruiters:** Designed and implemented an analytics dashboard for recruiters, providing real-time statistics on candidate pools, match rates, and hiring trends, leading to a 25% increase in recruiter productivity and a 15% improvement in data-driven decision making.
+      
+      - job: "Artificial Intelligence Researcher"
+        company: "SCAAI"
+        companyUrl: "https://www.scaai.edu.in/"
+        date: "Apr 2022 - Jan 2023"
+        # featuredLink:
+        #   enable: true
+        #   url: "https://example.com"
+        info:
+           enable: true
+           content: This was a full time internship
+        content: |
+          - **Pre-trained Deep Neural Network:** Utilized self-supervised learning techniques like Non-Parametric Instance Discrimination (NPID) and contrastive learning in PyTorch to pre-train a deep neural network on a large, unlabeled retinal fundus dataset, improving feature extraction accuracy by 30% without manual annotations.
+          - **Transfer Learning for Retinal Disease Classification:** Fine-tuned the pre-trained model on a dataset of over 6000 retinal fundus images, effectively leveraging general visual understanding to classify various retinal diseases.
+          - **Distributed Computing with Apache Spark:** Employed Apache Spark for distributed computing and data processing, efficiently scaling training and inference processes to achieve 86% accuracy in diagnosing diabetic retinopathy and other retinal conditions.
+          - **Web Platform Development:** Designed and deployed a web platform using Flask and Heroku, achieving 70% real-time diagnostic accuracy. Integrated D3.js for dynamic data visualization to present diagnostic results clearly.
+          - **Natural Language Processing (NLP) for Enhanced Predictions:** Implemented Python-based NLP techniques to analyze patient medical records, incorporating relevant information into the model. This approach improved predictive accuracy by 15%, enabling more informed and precise diagnoses.
+      
+      - job: "Machine Learning Researcher"
+        company: "Tata Consultacy Services"
+        companyUrl: "https://www.tcs.com/"
+        date: "Apr 2021 - Jan 2022"
+        info:
+           enable: true
+           content: This was a full time internship.
+        # featuredLink:
+        #   enable: true
+        #   url: "https://example.com"
+        content: |
+          - **Customer Behavior Analysis and Clustering:** Analyzed 150K customer trip data points using K-Means clustering in scikit-learn, applying silhouette analysis and the elbow method to identify distinct transportation behavior patterns and enable targeted service improvements.
+          - **Emissions Forecasting and Model Development:** Utilized insights from clustering analysis to engineer LSTM, ARIMA, and regression models on Amazon SageMaker, leveraging sensor data from 50K vehicles. Implemented sliding window techniques and hyperparameter tuning via grid search, reducing emissions forecast error by 15%.
+          - **Data Visualization and Insights:** Integrated model outputs and 500K emissions data points into an interactive Tableau dashboard, featuring advanced visualizations like heatmaps and geospatial plots. Facilitated data-driven decision-making for executive stakeholders by extracting key insights through correlation analysis and feature importance ranking.
+          - **Model Optimization and Deployment:** Enhanced model explainability by 35% using SHAP values and LIME, and improved reliability by 18% through ensemble methods and cross-validation techniques. Ensured consistent deployment using Git for version control and Docker for containerization.
+          - **Research and Knowledge Sharing:** Published a conference paper on novel time series approaches for environmental forecasting, contributing to the field of sustainable transportation and demonstrating the impact of the internship project.
+
+      # - job: "Business Analytics Engineer"
+      #   company: "Netflix"
+      #   companyUrl: "https://example.com"
+      #   date: "June 2017 - Nov 2019"
+      #   featuredLink:
+      #     enable: true
+      #     url: "https://example.com"
+      #   content: |
+      #     I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+      #     - Lead backend developer for a product.
+      #     - Created a frontend design for a product.
+
+      # - job: "Product Designer"
+      #   company: "Google"
+      #   companyUrl: "https://example.com"
+      #   date: "Feb 2016 - Mar 2017"
+      #   content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Master of Computer Science (Artificial Intelligence Specialisation)"
+        school:
+          name: "University of Southern California, Los Angeles"
+          url: "https://www.usc.edu/"
+        date: "2023 - 2025"
+        content: |-
+          I am pursuing a Master's in Computer Science with a specialization in Artificial Intelligence at the University of Southern California. Through USC's world-class program, I am gaining expertise in cutting-edge AI technologies such as Generative AI, Large Language Models (LLMs), Reinforcement Learning, and Recommendation Systems.
+          With hands-on projects and guidance from renowned faculty, I am developing the skills to create intelligent systems that can revolutionize industries. USC's vibrant learning environment inspires me to explore the boundless potential of AI and create impactful solutions in the field of computer science.
+      - title: "Bachelor of Computer Engineering"
+        school:
+          name: "International Institute of Information Technology, Pune"
+          url: "https://www.isquareit.edu.in/"
+        date: "2019 - 2023"
+        content: |-
+          - Graduated in the top 1% of the class with a 3.74/4 GPA
+          - Gained expertise in Python, C/C++, Machine Learning, Deep Learning, NLP, Computer Vision, Algorithms, and Data Structures
+          - Published 4 research papers in renowned conferences and journals like IEEE and Springer Nature
+          - Developed a strong grasp of cutting-edge AI techniques and their real-world applications through hands-on projects and collaborations with esteemed professors
+
+
+          Extracurricular Activities
+          1. IEEE:
+            - As the youngest IEEE Student Branch Chair, led a 100+ member team and oversaw 15 activities engaging 300+ students
+            - Served as IEEE Student Section Representative, leading 25+ branches and collaborating with 8 sections to organize 5 events for 1000+ participants
+            - Promoted IEEExtreme 15 as an IEEE Ambassador, increasing participation by 150%
+          2. CESA:
+            - Spearheaded 12 coding competitions, 5 hackathons, and 20 tech talks for a 600+ member community
+            - Organized "Code Uncode" and "HackOverflow" events, attracting 500+ participants from 15 colleges (40% increase)
+            - Conducted 10 workshops on trending CS topics, enabling skill development for 250+ students
+          
+        # featuredLink:
+        #   enable: true
+        #   name: "My academic record"
+        #   url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Founder & CEO - ISEAS
+        content: Successfully founded and led ISEAS Startup as CEO, developing AI/ML-based vehicular and personal safety solutions. Managed a cross-functional team of 15, overseeing product development, engineering, and marketing initiatives. 
+        # url: https://example.com
+        image: /images/achievements/iseas.png
+      - title: Best IEEE Student Volunteer
+        content: Selected as the top volunteer among 1000+ IEEE members in the region, recognizing exceptional contributions that increased student engagement by 40% and led three community outreach programs impacting over 500 local students.
+        image: /images/achievements/volunteer.png
+      - title: Best IEEE Student Chair Award
+        content: Chosen from 50 colleges chapters for outstanding leadership, successfully organizing 15 high-impact events that increased chapter membership by 75% and secured $5,000 in sponsorships for AI and ML initiatives.
+        #url: "https://github.com/gurusabarish/hugo-profile"
+        image: /images/achievements/student_chair.png
+      - title: Best IEEE Student Researcher Award
+        content: Awarded to the top researcher out of 500 undergraduate students, acknowledging groundbreaking work in AI and ML that resulted in two publications that were presented at a prestigious international conference with 1000+ attendees.
+        image: /images/achievements/student_researcher.png     
+      # - title: Best Student of the Year Award - IIIT
+      #   content: Selected as the top student among 1,000+ undergraduates at IIIT, recognizing exceptional academic performance, leadership, and contributions to the institute. Achieved a CGPA above 9.0, led two major technical projects, and organized a national-level hackathon attracting 500+ participants
+      #   image: /images/achievment.jpg
+        #url: https://example.com
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: RXPurposeAI - A Gen AI Approach to Drug Repurposing
+        content: Led an AI-driven drug discovery and repurposing project, training a DeepPurpose model on 7,229 molecules and 1,849 proteins. Utilized MPNN and CNN encodings, achieving an AUROC of 0.71. Integrated Generative AI techniques, including planned implementation of GENTRL for innovative drug design. Developed a framework combining large-scale generative AI with DeepPurpose, improving data engine accuracy to 78.85% and streamlining potential drug candidate identification.
+        image: /images/projects/rxpurpose.png
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "Generative Adversarial Networks (GANs)"
+          - "Pytorch & Tensorflow"
+          - "Generative Tensorial Reinforcement Learning (GENTRL)"
+          - "RDKit"
+          - "Apache Kafka"
+          - "PyAutoDock"
+        # links:
+        #   # - icon: fa fa-envelope
+        #   #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/hugo-profile
+          # - icon: fab fa-twitter
+          #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Multiple Reinforcement Learning Approaches on Rogue-Gym
+        content: Developed deep RL agents using PPO and PyTorch for procedurally generated Rogue-Gym environments, improving average episode rewards by 15%. 
+          
+          Implemented hierarchical RL, transformer-based approaches, and multi-task learning, reducing required training episodes by 30% through enhanced generalization. 
+          
+          Utilized latent variable models with PyTorch and JAX, employing sparse training and distributed computing to boost performance by 40% on complex environments.
+        image: /images/projects/rlagent.png
+        # featured:
+        #   name: Demo
+        #   link: https://django-converter.herokuapp.com
+        badges:
+          - "Reinforcement Learning"
+          - "Pytorch & JAX"
+          - "Proximal Policy Optimization (PPO)"
+          - "Apache Spark"
+        links:
+          - icon: fab fa-github
+            url: "https://github.com/rogue-agents-sc/Existing-PPO-Agents"
+      
+      - title: Predictive Lead Scoring for Cost-Effective Customer Acquisition
+        content: Developed a lead scoring system to predict the likelihood of leads purchasing a product, helping an ed-tech startup optimize marketing efforts and reduce customer acquisition costs. Conducted extensive EDA using pandas profiling, handled missing values, and reduced high cardinality. Utilized Pycaret for model experimentation, identifying LightGBM as the best-performing model with 89% accuracy. Implemented data, training, and inference pipelines using Airflow for streamlined processing. Logged models to MLflow registry for tracking and comparison. Developed unit tests using pytest to validate preprocessing functionalities.
+        image: /images/projects/mlops.png
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Pandas"
+          - "Scikit-learn"
+          - "Pycaret"
+          - "MLFlow"
+          - "Apache Airflow"
+          - "PyTest"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Akalbir17/MLOps_Lead_Scoring
+      
+      - title: SmartGesture TV:- AI-Powered Remote-Free Control System
+        content: "Developed an advanced gesture recognition system for smart TVs using deep learning techniques. Implemented and compared two approaches: Conv3D and Conv2D+RNN with transfer learning (MobileNet). Processed a dataset of 30-frame gesture videos, applying data preprocessing techniques including image resizing and normalization. Achieved 97% validation accuracy with the Conv2D+RNN model, enabling accurate recognition of five distinct gestures for TV control. The system provides an intuitive, remote-free interface for volume adjustment, video navigation, and playback control."
+        image: /images/projects/gesture.png
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Computer Vision"
+          - "Tensorflow"
+          - "CNN & RNN"
+          - "Pandas"
+          - "Video Processing"
+          - "OpenCV"
+          - "Transfer Learning"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Akalbir17/Gesture-Recognition
+      
+      - title: "NewsGPT: Intelligent News Summarization with Extractive and Abstractive Methods" 
+        content: "Developed an efficient news summarization application using two distinct methods: extractive summarization and abstractive summarization with GPT-3. The extractive approach selects the most important sentences from the original article, while the abstractive method generates human-like summaries using GPT-3's language understanding capabilities. Implemented a comparison feature to highlight the differences in content, style, and length between the two approaches. Created an intuitive web interface using Gradio for easy user interaction and summary evaluation."
+        image: /images/projects/newsgpt.png
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Gradio"
+          - "Natural Language Processing (NLP)"
+          - "Information Retrival"
+          - "GPT-3 Language Model"
+          - "Text Summarization"
+          - "Web Crawling"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/Akalbir17/News-Summariser
+
+
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:chadhakalbirsingh@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/Akalbir17
+      linkedin: https://www.linkedin.com/in/akkalbeir/
+    
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
