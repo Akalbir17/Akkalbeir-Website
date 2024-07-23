@@ -1,4 +1,4 @@
-baseURL: "http://localhost:1313/"
+baseURL: "https://akkalbeir-singh-chadha.netlify.app/"
 languageCode: "en-us"
 title: "Akalbir Singh Chadha's Portfolio"
 theme: hugo-profile
