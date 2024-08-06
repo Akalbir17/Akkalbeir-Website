@@ -211,7 +211,7 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Artificial Intelligence Engineer"
+      - job: "Artificial Intelligence Engineer Lead (B2B)"
         company: "Workup"
         companyUrl: "https://www.joinworkup.com/"
         date: "May 2024 - present"
@@ -219,6 +219,9 @@ params:
         #   enable: true
         #   name: "View the project"
         #   url: "https://example.com"
+        info:
+           enable: true
+           content: This was a full time internship
         content: |
           - **AI-Driven Multimodal Recommendation System:** Conceptualized, pitched to CEO, and secured approval for a multimodal AI-driven recommendation system, subsequently leading a team of 6 to integrate computer vision, NLP, and audio processing techniques for comprehensive candidate profile analysis, resulting in a 30% reduction in candidate screening time.
           - **Custom Deep Learning Architecture:** Engineered a custom deep learning architecture using PyTorch, leveraging state-of-the-art techniques such as Vision Transformers (ViT) for video analysis, BERT for text processing, and WaveNet for audio feature extraction. Resulted in a 45% increase in candidate-job matching accuracy and a 40% improvement in shortlisting efficiency.
