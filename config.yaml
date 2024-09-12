@@ -141,7 +141,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://drive.google.com/file/d/1SShWj77CcZTnHg1mp2W4A5L3-mZLp5Bm/view?usp=sharing"
+      url: "https://drive.google.com/file/d/1SVAAFRKtST7FKIJWQLw94cC8c0pyvaiW/view?usp=sharing"
       download: true
       newPage: true
     socialLinks:
@@ -211,7 +211,7 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Artificial Intelligence Engineer Lead (B2B)"
+      - job: "Artificial Intelligence Engineer Lead Intern"
         company: "Workup"
         companyUrl: "https://www.joinworkup.com/"
         date: "May 2024 - present"
@@ -229,7 +229,7 @@ params:
           - **Developed Scalable Backend and Frontend Integration:** Built a scalable backend using Flask and MongoDB, capable of handling 1000+ concurrent users, and integrated with the frontend via RESTful APIs and Axios, achieving a 30% reduction in server response time and a 25% increase in user satisfaction.
           - **Designed Analytics Dashboard for Recruiters:** Designed and implemented an analytics dashboard for recruiters, providing real-time statistics on candidate pools, match rates, and hiring trends, leading to a 25% increase in recruiter productivity and a 15% improvement in data-driven decision making.
       
-      - job: "Artificial Intelligence Researcher"
+      - job: "Research Collaborator/Intern"
         company: "SCAAI"
         companyUrl: "https://www.scaai.edu.in/"
         date: "Apr 2022 - Jan 2023"
@@ -246,13 +246,13 @@ params:
           - **Web Platform Development:** Designed and deployed a web platform using Flask and Heroku, achieving 70% real-time diagnostic accuracy. Integrated D3.js for dynamic data visualization to present diagnostic results clearly.
           - **Natural Language Processing (NLP) for Enhanced Predictions:** Implemented Python-based NLP techniques to analyze patient medical records, incorporating relevant information into the model. This approach improved predictive accuracy by 15%, enabling more informed and precise diagnoses.
       
-      - job: "Machine Learning Researcher"
+      - job: "Research Intern"
         company: "Tata Consultacy Services"
         companyUrl: "https://www.tcs.com/"
         date: "Apr 2021 - Jan 2022"
         info:
            enable: true
-           content: This was a full time internship.
+           content: This was a full time internship. It was in Collaboration with IEEE Pune Section
         # featuredLink:
         #   enable: true
         #   url: "https://example.com"
