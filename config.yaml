@@ -141,7 +141,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://drive.google.com/file/d/1SVAAFRKtST7FKIJWQLw94cC8c0pyvaiW/view?usp=sharing"
+      url: "https://drive.google.com/file/d/1aM3mGLMdzn1ghT00O1zeKqbvfz_WRSVj/view?usp=sharing"
       download: true
       newPage: true
     socialLinks:
@@ -211,7 +211,7 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Artificial Intelligence Engineer Lead Intern"
+      - job: "Software Engineer Lead Intern – ML Focus"
         company: "Workup"
         companyUrl: "https://www.joinworkup.com/"
         date: "May 2024 - present"
