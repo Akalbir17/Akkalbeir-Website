@@ -134,7 +134,7 @@ params:
     typingAnimation: true
     content: "A passionate AI/ML engineer with a knack for turning data into decisions. I specialize in crafting intelligent systems that can predict the future, recognize patterns, and occasionally beat me at chess. My algorithms are so smart, they've started leaving me sticky notes with optimization tips."
     #A passionate AI/ML engineer with a knack for turning data into decisions. I specialize in crafting intelligent systems that can predict the future, recognize faces, and maybe even understand why my code works (when it does). From neural networks that dream of electric sheep to algorithms that can beat you at chess while simultaneously ordering pizza, I'm here to push the boundaries of what's possible in the world of artificial intelligence.
-    image: /images/ai_me.jpg
+    image: /images/ai_me_2.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
